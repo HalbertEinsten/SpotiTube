@@ -1,0 +1,380 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "Manrope", sans-serif;
+}
+
+:root {
+    --black: #000000;
+    --gray: #242424;
+    --soft-black: #0e0d0d;
+    --purple: #2e0a57;
+    --soft-gray: #5f5e5e;
+    --light-gray: #B7B3B6;
+    --white-color: #ffffff;
+}
+
+body {
+    background-color: var(--black);
+    color: var(--white-color);
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.menu-header {
+    position: fixed;
+    top: 3px;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    border-bottom: var(--border);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 0.3rem;
+    padding-bottom: 0.5rem;
+}
+
+.header-logo>i {
+    font-size: 32px;
+    cursor: pointer;
+    padding: 3px 20px 3px 20px;
+    /* cima direita baixo esquerda */
+}
+
+.menu-house {
+    display: flex;
+}
+
+.menu-house button {
+    padding: 10px;
+    border-radius: 40px;
+    margin-right: 15px;
+    background-color: var(--gray);
+    border: none;
+
+}
+
+.menu-house button:hover {
+    background-color: #363535;
+    transition: 0.5s;
+
+}
+
+.menu-house i {
+    font-size: 25px;
+
+}
+
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    background-color: var(--gray);
+    padding: 8px 12px;
+    border-radius: 100px;
+    width: 450px;
+
+}
+
+.search-bar i {
+    cursor: pointer;
+    color: var(--soft-gray);
+}
+
+.search-bar input {
+    background-color: transparent;
+    border: none;
+    color: var(--white-color);
+    padding: 8px 16px;
+    width: 100%;
+    margin-left: 8px;
+    outline: none;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.search-bar:hover {
+    background-color: #363535;
+    transition: 0.5s;
+}
+
+.img-account {
+    cursor: pointer;
+}
+
+/* Fim header */
+
+
+.side-bar {
+    margin-top: 80px;
+    border-radius: 10px;
+    width: 300px;
+    background-color: var(--soft-black);
+    padding: 24px 10px 90px 10px;
+    /* right  left */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.nav-library i,
+p {
+    font-size: 14px;
+
+
+
+}
+
+.nav-library p {
+    font-size: 14px;
+    padding: 10px;
+
+
+
+}
+
+
+.nav-library {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: default;
+    justify-content: space-between;
+}
+
+.btn-create {
+    padding: 10px 20px 10px 15px;
+    border-radius: 40px;
+    border: none;
+    background-color: var(--gray);
+    color: var(--white-color);
+    font-weight: 800;
+
+}
+
+.btn-create:hover {
+    background-color: #363535;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.btn-create i {
+    margin-right: 5px;
+
+}
+
+.nav-search {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-search .btn-side {
+
+    margin-left: 8px;
+    border: none;
+    border-radius: 40px;
+    margin-right: 10px;
+    padding: 10px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.nav-search .btn-side:hover {
+
+    background-color: var(--gray);
+}
+
+.nav-search .btn-side i {
+    font-size: 20px;
+}
+
+.btn-recents {
+    margin-right: 12px;
+    background-color: transparent;
+    border: none;
+    color: var(--light-gray);
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.btn-recents:hover {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+
+
+.nav-playlist {
+    background-color: var(--gray);
+    padding: 16px;
+    border-radius: 8px;
+    cursor: default;
+}
+
+.nav-playlist button {
+    background-color: var(--white-color);
+    color: var(--black);
+    border: none;
+    padding: 6px 16px;
+    margin-top: 16px;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 900;
+    border-radius: 20px;
+}
+
+.nav-playlist button:hover {
+    font-size: 13px;
+}
+
+
+.nav-playlist p {
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.nav-footer {
+    margin-top: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: left;
+
+}
+
+.nav-footer a {
+    color: var(--gray-color);
+    text-decoration: none;
+    font-size: 12px;
+    margin-right: 12px;
+    margin-bottom: 8px;
+    padding: 2px 0px 0px 10px;
+    /* cima direita baixo esquerda */
+}
+
+.nav-language {
+    background-color: transparent;
+    border: 1px solid var(--white-color);
+    color: var(--white-color);
+    padding: 7px 15px;
+    margin-top: 16px;
+    margin-left: 10px;
+    cursor: pointer;
+    width: fit-content;
+    border-radius: 40px;
+    font-size: 13px;
+    font-weight: 700;
+
+}
+
+.nav-language:hover {
+    font-size: 14px;
+    border: 1.5px solid var(--white-color);
+}
+
+
+/* end Side-Bar */
+/* Start MAIN */
+
+main{
+    flex-grow: 1;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
+    margin-left: 10px;
+    border-radius: 10px;
+    max-width: 1400px;
+    padding: 24px 10px 90px 10px;
+    gap: 20px;
+    background: linear-gradient(130deg, var(--gray) 0%,var(--black)100%);
+
+    
+}
+
+
+
+.artists-grid , .albums-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 24px;
+    margin-bottom: 40px;
+
+}
+
+.artist-card, .album-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+   
+    padding: 16px;
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+
+}
+
+.artist-card:hover, .album-card:hover{
+    background-color: var(--gray);
+}
+
+.artist-card img, .album-card img{
+ width: 100%;
+ max-height: 70%;
+ border-radius: 50%;
+ margin-bottom: 16px;
+
+}
+
+.artist-card h3, .album-card h3{
+    font-size: 12px;
+}
+
+
+.artist-card p, .album-card p{
+    font-size: 10px;
+    color: var(--light-gray);
+}
+
+/* Fim Main */
+/* Start Footer */
+
+.content h2{
+    margin-bottom: 10px;
+}
+
+.banner{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: linear-gradient(90deg, #AF2896, #509BF5);
+
+}
+
+.banner h2{
+    font-size: 14px;
+}
+
+.banner p{
+    font-size: 10px;
+}
+
+.banner button{
+    border-radius: 20px;
+    color: var(--black);
+    border: none;
+    padding: 12px 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
