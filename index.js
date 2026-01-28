@@ -28,11 +28,17 @@ document.addEventListener('DOMContentLoaded', () => {
         artistCard.classList.add('artist-card')
 
         artistCard.innerHTML = `
-
+            <div class='image-wrap'>
             <img src=${artist.image} alt=imagem do${artist.name}>
+            <button class="play-btn">
+                <img src="https://img.icons8.com/flat-round/play--v1.png" alt="Play" class="box-image"/>
+            </button>
             <div>
+            
             <h3>${artist.name}</h3>
+            
             <p>artista</p>
+             </div>
              </div>
              
 
@@ -41,18 +47,22 @@ document.addEventListener('DOMContentLoaded', () => {
         artistGrid.appendChild(artistCard)
 
     })
-    
-        albumsData.forEach(album => {
+
+    albumsData.forEach(album => {
 
         const albumCard = document.createElement('div')
         albumCard.classList.add('album-card')
 
         albumCard.innerHTML = `
-
+            <div class='image-wrap'>
             <img src=${album.image} alt=imagem do${album.name}>
+             <button class="play-btn">
+                <img src="https://img.icons8.com/flat-round/play--v1.png" alt="Play" class="box-image"/>
+            </button>
             <div>
             <h3>${album.name}</h3>
             <p>${album.artist}</p>
+            </div>
             </div>
 
         `
